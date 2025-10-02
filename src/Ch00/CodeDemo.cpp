@@ -4,6 +4,7 @@
 
 #include <iostream>
 
+// main function
 int main(){
     float num_1, num_2, result;
 
