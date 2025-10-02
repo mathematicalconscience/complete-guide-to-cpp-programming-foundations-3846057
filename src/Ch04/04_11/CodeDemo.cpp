@@ -9,7 +9,13 @@
 std::vector<int> SelectKeyPoints(std::vector<int> distances, int checkpointIndex){
     std::vector<int> result;
 
-    // Write your code here
+    if (checkpointIndex >= distances.size()) {
+        return result;
+    }
+
+    result.push_back(*distances.begin());
+    result.push_back(distances[checkpointIndex]);
+    result.push_back(*(distances.end()-1));
     
     return result;
 }
